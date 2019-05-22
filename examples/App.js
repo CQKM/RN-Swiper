@@ -1,29 +1,30 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Text, StyleSheet, Image, View, Dimensions} from 'react-native';
+import { RNSwiper } from './src/libs'
+const { width, height } = Dimensions.get("window");
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
-
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <View style={{height:250}}>
+          <RNSwiper>
+            <View style={[styles.wrapStyle]}>
+                <Image style={[styles.wrapStyle]} source={{uri: 'http://i0.hdslb.com/bfs/article/a35ee19ab0ed6c9d339ed8a249bd04ba60bb810a.jpg'}} />
+            </View>
+            <View style={[styles.wrapStyle]}>
+                <Image style={[styles.wrapStyle]} source={{uri: 'http://i0.hdslb.com/bfs/article/cfc269a0f43becbdde3e8766887763f393dacad2.png'}} />
+            </View>
+            <View style={[styles.wrapStyle]}>
+                <Image style={[styles.wrapStyle]} source={{uri: 'http://i0.hdslb.com/bfs/article/d23204086da3554c7bea5dfcec8e785e8efb8c6c.jpg'}} />
+            </View>
+            <View style={[styles.wrapStyle]}>
+                <Image style={[styles.wrapStyle]} source={{uri: 'http://attachments.gfan.com/forum/201504/15/202301silig00iwt0sgezn.jpg'}} />
+            </View>
+          </RNSwiper>
+        </View>
+        <Text style={{textAlign: 'center'}}>Other Content</Text>
       </View>
     );
   }
@@ -32,18 +33,9 @@ export default class App extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  wrapStyle:{
+    width: width,
+    height: 250
+  }
 });

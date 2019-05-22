@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/CQKM/RN-Swiper#readme",
   "dependencies": {
+    "react": "^16.8.6",
     "react-native": "^0.59.8"
   }
 }
