@@ -1,0 +1,26 @@
+{
+  "name": "rn-swiper",
+  "version": "1.0.0",
+  "description": "just a carousel for react native",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CQKM/RN-Swiper.git"
+  },
+  "keywords": [
+    "React",
+    "Native"
+  ],
+  "author": "hjh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CQKM/RN-Swiper/issues"
+  },
+  "homepage": "https://github.com/CQKM/RN-Swiper#readme",
+  "dependencies": {
+    "react-native": "^0.59.8"
+  }
+}
