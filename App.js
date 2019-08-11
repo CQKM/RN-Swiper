@@ -8,6 +8,7 @@ export default class App extends Component{
     return (
       <View style={styles.container}>
         <RNSwiper
+          loop={false}
           onChangeIndex={(index) => {
             console.log('nowIndex',index)
           }}
