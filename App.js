@@ -7,7 +7,11 @@ export default class App extends Component{
   render() {
     return (
       <View style={styles.container}>
-        <RNSwiper style={styles.container}>
+        <RNSwiper
+          onChangeIndex={(index) => {
+            console.log('nowIndex',index)
+          }}
+        >
           {
             [1,2,3].map(item => <Text key={item} style={styles.font}>{item}</Text>)
           }
