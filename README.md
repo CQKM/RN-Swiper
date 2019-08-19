@@ -2,7 +2,11 @@
 
 #### ScreenShot
 ![image](https://github.com/CQKM/RN-Swiper/blob/master/screenshot.gif)
-see project/screenshot.gif
+
+or
+project/screenshot.gif
+
+
 #### Usage
 
 `yarn add rn-swiper` or `npm install rn-swiper`
