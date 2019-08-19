@@ -1,0 +1,24 @@
+{
+  "name": "rn-swiper",
+  "version": "1.0.0",
+  "description": "a simple swiper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CQKM/RN-Swiper.git"
+  },
+  "keywords": [
+    "swiper",
+    "RN",
+    "RN-Swiper"
+  ],
+  "author": "hjhgzem@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CQKM/RN-Swiper/issues"
+  },
+  "homepage": "https://github.com/CQKM/RN-Swiper#readme"
+}
