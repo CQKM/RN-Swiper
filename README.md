@@ -11,7 +11,12 @@ project/screenshot.gif
 
 `yarn add rn-swiper` or `npm install rn-swiper`
 
+`import RNSwiper from 'rn-swiper'`
+
 ```javascript
+let data = 'HelloWord'.toUpperCase().split('')
+const { width, height } = Dimensions.get("window")
+
 <View style={styles.container}>
     <View style={{ height: 200 }}> // wrapStyle
         <RNSwiper
@@ -35,16 +40,28 @@ project/screenshot.gif
     </View>
     <Text>other content</Text>
 </View>
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  font: {
+    color: '#fff',
+    fontSize: 30
+  },
+  slideStyle: { height: 200, width, backgroundColor: '#7e57c2' },
+});
+
 ```
 #### Properties
 
 Prop | Default | Type | Description
 -|-|-|-
-slideStyle | {} | ViewStyle | 
-loop | true | boolean | 
-autoPlay | true | boolean |
-autoPlayTimeOut | 3000 | number |
-initIndex | 0 | number |
-onIndexChanged | (index) => null | function |
-renderPagination | (index) => null | JSX |
-animation | (value, toValue) => Animated  | function |
+slideStyle | {} | ViewStyle | none
+loop | true | boolean | Set to `false` to disable continuous loop mode.
+autoPlay | true | boolean | Set to `true` enable auto play mode.
+autoPlayTimeOut | 3000 | number | auto paly delay
+initIndex | 0 | number | Index number of initial slide
+onIndexChanged | (index) => null | function | Called with the new index when the user swiped
+renderPagination | (index) => null | JSX | customize pagination
+animation | (value, toValue) => Animated  | function | customize animated
