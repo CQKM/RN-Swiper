@@ -9,9 +9,9 @@ project/screenshot.gif
 
 #### Usage
 
-`yarn add rn-swiper` or `npm install rn-swiper`
+`yarn add rnezswiper` or `npm install rnezswiper`
 
-`import RNSwiper from 'rn-swiper'`
+`import RNSwiper from 'rnezswiper'`
 
 ```javascript
 let data = 'HelloWord'.toUpperCase().split('')
