@@ -1,7 +1,7 @@
 
 import React, {Component} from 'react';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
-import RNSwiper from './lib'
+import RNSwiper from 'rnezswiper'
 const { width, height } = Dimensions.get("window")
 let data = 'HelloWord'.toUpperCase().split('')
 export default class App extends Component{

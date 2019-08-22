@@ -5198,6 +5198,11 @@ rimraf@~2.2.6:
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
   integrity sha1-5Dm+Kq7jJzIZUnMPmaiSnk/FBYI=
 
+rnezswiper@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/rnezswiper/-/rnezswiper-1.0.1.tgz#b9b58bd31d26e7ffc230e56df4d4e2b844135da1"
+  integrity sha512-N6vD5w1IMt5lNvB6J/krPdNHv6mRY+pVtjDblQmxCmbz91MPZ38er265KmArZvWaMuNFDEJ/2fTn9bDyPAe5tQ==
+
 rsvp@^3.3.3:
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-3.6.2.tgz#2e96491599a96cde1b515d5674a8f7a91452926a"
